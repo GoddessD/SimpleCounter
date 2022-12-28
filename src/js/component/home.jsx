@@ -13,16 +13,16 @@ const Home = (props) => {
     const second = Math.floor(props.counter/10)%10;
     const first = Math.floor(props.counter/1)%10;
 
- return (<div className="entireCounter row"> 
-    <div className="digit col">
-	<i className="fas-regular fa-clock"></i>
+ return (<div className="entireCounter d-flex bg-dark text-white justify-content-center"> 
+    <div className="mx-3  bg-secondary">
+	<i className="fa-regular fa-clock"></i>
 	</div>
-    <div className="digit col-sm">{sixth}</div>
-    <div className="digit col">{fifth}</div>
-    <div className="digit col">{fourth}</div>
-    <div className="digit col">{third}</div>
-    <div className="digit col">{second}</div>
-    <div className="digit col">{first}</div>
+    <div className="mx-3 bg-secondary ">{sixth}</div>
+    <div className="mx-3 bg-secondary">{fifth}</div>
+    <div className="mx-3 bg-secondary">{fourth}</div>
+    <div className="mx-3 bg-secondary">{third}</div>
+    <div className="mx-3 bg-secondary ">{second}</div>
+    <div className="mx-3 bg-secondary">{first}</div>
     </div> 
 		 );
 };
